@@ -29,12 +29,3 @@ export const checkRole =(role1: string, role2:string) => {
 }
 const rta2 = checkRole(ROLES.ADMIN, ROLES.SELLER);
 console.log('checkRole',rta2);
-
-export const checkRolev2 =(roles: string[]) => {
-  if(roles.includes(currentUser.role)){
-    return true;
-  }
-  return false;
-}
-const rta3 = checkRolev2([ROLES.ADMIN, ROLES.SELLER]);
-console.log('checkRolev2',rta3);

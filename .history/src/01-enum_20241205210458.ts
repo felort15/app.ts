@@ -1,5 +1,5 @@
 
-export enum ROLES {
+enum ROLES {
   ADMIN = "admin",
   SELLER = "seller",
   CUSTOMER = "customer",
@@ -7,11 +7,11 @@ export enum ROLES {
 
 
 type User = {
-  userName: string;
+  username: string;
   role: ROLES;
 }
 
 const nicoUser: User = {
-  userName: 'nicobytes',
+  username: 'nicobytes',
   role: ROLES.SELLER
 }

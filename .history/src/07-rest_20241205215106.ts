@@ -18,7 +18,7 @@ export const checkAdminRole = () =>{
 }
 
 const rta = checkAdminRole();
-console.log("checkAminRole",rta);
+console.log(rta);
 
 
 export const checkRole =(role1: string, role2:string) => {
@@ -27,14 +27,5 @@ export const checkRole =(role1: string, role2:string) => {
   }
   return false;
 }
-const rta2 = checkRole(ROLES.ADMIN, ROLES.SELLER);
-console.log('checkRole',rta2);
-
-export const checkRolev2 =(roles: string[]) => {
-  if(roles.includes(currentUser.role)){
-    return true;
-  }
-  return false;
-}
-const rta3 = checkRolev2([ROLES.ADMIN, ROLES.SELLER]);
-console.log('checkRolev2',rta3);
+const rta2 = checkAdminRole();
+console.log(rta2);
