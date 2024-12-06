@@ -37,7 +37,7 @@ export const checkRolev2 =(roles: string[]) => {
   return false;
 }
 const rta3 = checkRolev2([ROLES.ADMIN, ROLES.SELLER]);
-console.log('checkRolev3',rta3);
+console.log('checkRolev2',rta3);
 
 
 export const checkRolev3 =(...roles: string[]) => {
@@ -47,4 +47,4 @@ export const checkRolev3 =(...roles: string[]) => {
   return false;
 }
 const rta4 = checkRolev3(ROLES.ADMIN, ROLES.SELLER, ROLES.CUSTOMER);
-console.log('checkRolev4',rta4);
+console.log('checkRolev2',rta4);
