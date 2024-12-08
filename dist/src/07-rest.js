@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.checkRolev2 = exports.checkRole = exports.checkAdminRole = void 0;
+exports.checkRolev3 = exports.checkRolev2 = exports.checkRole = exports.checkAdminRole = void 0;
 const _01_enum_20241205210511_1 = require("../.history/src/01-enum_20241205210511");
 const currentUser = {
     userName: 'nicobytes',
@@ -32,4 +32,13 @@ const checkRolev2 = (roles) => {
 };
 exports.checkRolev2 = checkRolev2;
 const rta3 = (0, exports.checkRolev2)([_01_enum_20241205210511_1.ROLES.ADMIN, _01_enum_20241205210511_1.ROLES.SELLER]);
-console.log('checkRolev2', rta3);
+console.log('checkRolev3', rta3);
+const checkRolev3 = (...roles) => {
+    if (roles.includes(currentUser.role)) {
+        return true;
+    }
+    return false;
+};
+exports.checkRolev3 = checkRolev3;
+const rta4 = (0, exports.checkRolev3)(_01_enum_20241205210511_1.ROLES.ADMIN, _01_enum_20241205210511_1.ROLES.SELLER, _01_enum_20241205210511_1.ROLES.CUSTOMER);
+console.log('checkRolev4', rta4);
