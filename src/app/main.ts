@@ -10,5 +10,6 @@ addProduct({
   category: {
     id: '12',
     name: 'category1',
+    createdAt: new Date()
   },
 });
