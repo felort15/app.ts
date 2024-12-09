@@ -7,3 +7,6 @@ products.push({
     stock: 12,
     sizes: ['M'],
 });
+const addProduct = (data) => {
+    products.push(data);
+};
